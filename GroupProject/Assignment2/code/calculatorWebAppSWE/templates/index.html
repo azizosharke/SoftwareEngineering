@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .container {
+            padding: 20px;
+            margin: 1rem;
+
+        }
+
+        .row {
+            display: flex;
+
+            flex-direction: column;
+            padding: 10px;
+
+        }
+
+        .heading {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        label {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        input[type=text] {
+            width: 600px;
+            height: 50px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        button {
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            border: 0px;
+            border-radius: 5px;
+            padding: .5rem .5rem;
+            width: 200px;
+            height: 50px;
+            margin-top: 1rem;
+            font-size: larger;
+        }
+
+        li {
+            padding: 5px;
+            font-size: medium;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="heading">Group 22 Calculator</h1>
+            <h3>This calculator accepts input at a string. It can accept +, -, *, /, log(x), and exp(x)</h3>
+            <h4>Please note that exp(x) is e^x and log(x) is the natural log of x</h4>
+        </div>
+        <hr>
+
+        {% if result %}
+        <div class="row">
+            <h2>Result : {{result}}</h2>
+        </div>
+        {% else %}
+        <div class="row">
+            <h2>Result :</h2>
+        </div>
+        {% endif %}
+        <div class="row">
+            <label for="exp">Enter expression here:</label>
+        </div>
+
+        <div class="row">
+            <form action="" method="post">
+                <input type="text" name="exp" required>
+                <br>
+                <button type="submit">Calculate</button>
+            </form>
+
+        </div>
+        
+    </div>
+</body>
+
+</html>

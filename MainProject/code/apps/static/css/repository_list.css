@@ -1,0 +1,42 @@
+.list-group {
+    width: 15rem;
+    color: #dadada;
+}
+
+.list-group-item {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border-radius: none;
+    background: #795ee339;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    transform: scaleX(1.1);
+}
+
+
+span {
+    margin-left: 0.1rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    color: #dadada;
+    overflow-wrap: break-word;
+}
+
+span:hover {
+    color: black;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    height: 100px;
+    padding: 58px 0 0;
+    width: 240px;
+    z-index: 600;
+}
